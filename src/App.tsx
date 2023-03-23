@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    
   const openMenu = () => {
     document.querySelector(".sidebar")?.classList.add("open");
   }
@@ -11,16 +12,16 @@ function App() {
     document.querySelector(".sidebar")?.classList.remove("open");
   }
   return (
-    div className="grid-container">
+    <div className="grid-container">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"></link>
         <title>Yellow Oslo</title>
     </head>
     <body>
         <div>
             <header className="header">
                 <div className="brand">
-                    <button onClick="openMenu()">&#9776;</button>
+                    <button onClick={openMenu}>&#9776;</button>
                     <a href="index.html">Yellow Oslo</a>
                 </div>
                 <div className="header-links">
@@ -30,7 +31,7 @@ function App() {
             </header>
             <aside className="sidebar">
                 <h3>Shopping Categories</h3>
-                <button className ="sidebar-close-button" onClick="closeMenu()">x</button>
+                <button className ="sidebar-close-button" onClick={closeMenu}>x</button>
                 <ul>
                     <li>
                         <a href="index.html">Pants</a>
