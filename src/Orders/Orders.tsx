@@ -30,7 +30,7 @@ function Orders(){
                                 <td>{order.createdAt}</td>
                                 <td>{order.totalPrice}</td>
                                 <td>{order.user.name}</td>
-                                <td>{order.isPaid}</td>
+                                <td>{order.isPaid.toString()}</td>
                                 <td>{order.paidAt}</td>
                                 <td>{order.isDelivered.toString()}</td>
                                 <td>{order.deliverableDate}</td>
