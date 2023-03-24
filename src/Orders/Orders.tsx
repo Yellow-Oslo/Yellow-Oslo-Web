@@ -29,7 +29,6 @@ function Orders(){
                                 <td>{order._id}</td>
                                 <td>{order.createdAt}</td>
                                 <td>{order.totalPrice}</td>
-                                <td>{order.totalPrice}</td>
                                 <td>{order.user.name}</td>
                                 <td>{order.isPaid}</td>
                                 <td>{order.paidAt}</td>
